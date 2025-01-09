@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.ico">
+	<title>WEBSOLUTIONFLK</title>
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body class="container-fluid p-0">
+
+	<svg class="d-none" xmlns="http://www.w3.org/2000/svg">
+		<symbol id="check2" viewBox="0 0 16 16">
+			<path
+			d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+			</path>
+		</symbol>
+		<symbol id="circle-half" viewBox="0 0 16 16">
+			<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+		</symbol>
+		<symbol id="moon-stars-fill" viewBox="0 0 16 16">
+			<path
+			d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+			</path>
+			<path
+			d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+			</path>
+		</symbol>
+		<symbol id="sun-fill" viewBox="0 0 16 16">
+			<path
+			d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+			</path>
+		</symbol>
+	</svg>
+
+	<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle" style="z-index: 2000">
+		<button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+		aria-expanded="false" data-bs-toggle="dropdown" aria-label="Alternar tema (automático)">
+			<svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+				<use href="#circle-half"></use>
+			</svg>
+			<span class="visually-hidden" id="bd-theme-text">Alternar tema</span>
+		</button>
+		<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+			<li>
+				<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+				aria-pressed="false">
+					<svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+						<use href="#sun-fill"></use>
+					</svg>
+						Light
+					<svg class="bi ms-auto d-none" width="1em" height="1em">
+						<use href="#check2"></use>
+					</svg>
+				</button>
+			</li>
+			<li>
+				<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+				aria-pressed="false">
+					<svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+						<use href="#moon-stars-fill"></use>
+					</svg>
+						Dark
+					<svg class="bi ms-auto d-none" width="1em" height="1em">
+						<use href="#check2"></use>
+					</svg>
+				</button>
+			</li>
+			<li>
+				<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+				aria-pressed="true">
+					<svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+						<use href="#circle-half"></use>
+					</svg>
+						Auto
+					<svg class="bi ms-auto d-none" width="1em" height="1em">
+						<use href="#check2"></use>
+					</svg>
+				</button>
+			</li>
+		</ul>
+	</div>
+
+	<header data-bs-theme="dark" id="header">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container">
+
+				<a class="navbar-brand d-flex align-items-center" href="#">
+					<img src="../img/logo.png" alt="Logo" width="30" height="30" class="me-2">
+				WEBSOLUTIONFLK
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="../index.html" class="nav-link">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link active" aria-current="page">Acerca de</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contacto" class="nav-link">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="../index.html" class="nav-link">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link active" aria-current="page">Acerca de</a>
+						</li>
+						<li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+							<a href="#contacto" class="nav-link">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+
+		<section class="container text-center py-5">
+			<div class="row py-lg-5">
+				<div class="col mx-auto">
+					<h1 class="fw-bold">Acerca de Nosotros</h1>
+					<p class="lead text-secondary">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container py-4">
+			<div class="row g-4">
+
+				<div class="col-md-6 mb-3">
+					<div class="card border-0 shadow">
+						<div class="card-body text-center">
+							<h5 class="card-title fw-bold">Misión</h5>
+							<p class="card-text">Un texto de ejemplo rápido para desarrollar el título y constituir la mayor parte del contenido.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 mb-3">
+					<div class="card border-0 shadow">
+						<div class="card-body text-center">
+							<h5 class="card-title fw-bold">Visión</h5>
+							<p class="card-text">Un texto de ejemplo rápido para desarrollar el título y constituir la mayor parte del contenido.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="container-fluid pt-3 bg-body-secondary" id="contacto">
+		<div class="row my-3">
+			<!-- Contactanos -->
+			<div class="col-md-4 p-3">
+				<h3>Contáctanos</h3>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item bg-body-secondary d-flex align-items-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16" aria-label="Teléfono">
+							<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/>
+						</svg>
+						<span>Teléfono</span>
+					</li>
+					<li class="list-group-item bg-body-secondary d-flex align-items-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope me-2" viewBox="0 0 16 16" aria-label="Correo">
+							<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105z"/>
+						</svg>
+						<span>Correo</span>
+					</li>
+					<li class="list-group-item bg-body-secondary d-flex align-items-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house me-2" viewBox="0 0 16 16" aria-label="Dirección">
+							<path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+						</svg>
+						<span>Dirección</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-4 p-3">
+				<h3>Horarios</h3>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item bg-body-secondary">Lunes a viernes: 8:00AM - 6:00PM</li>
+					<li class="list-group-item bg-body-secondary">Sábados y domingos: 8:00AM - 3:00PM</li>
+				</ul>
+			</div>
+
+			<div class="col-md-4 p-3">
+				<h3>Síguenos en:</h3>
+				<div class="d-flex gap-3">
+					<a href="#" aria-label="Facebook">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#00f" class="bi bi-facebook" viewBox="0 0 16 16">
+							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+						</svg>
+					</a>
+					<a href="#" aria-label="YouTube">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#f00" class="bi bi-youtube" viewBox="0 0 16 16">
+							<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+						</svg>
+					</a>
+					<a href="#" aria-label="Twitter">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#000" class="bi bi-twitter-x" viewBox="0 0 16 16">
+							<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-2 text-center p-2">
+			<p class="m-0">© Copyright - Todos los derechos reservados</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-bundle.js"></script>
+	<script type="text/javascript" src="../js/color-modes.js"></script>
+
+</body>
+</html>
